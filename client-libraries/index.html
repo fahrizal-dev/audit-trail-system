@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Trail Client Libraries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #1e293b;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .library-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin: 30px 0;
+        }
+        
+        .library-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 24px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        
+        .library-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: #6366f1;
+        }
+        
+        .library-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        
+        .library-card h3 {
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+        
+        .library-card p {
+            color: #64748b;
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .file-list {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+        
+        .file-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #475569;
+        }
+        
+        .file-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        }
+        
+        .docs-section {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 30px;
+        }
+        
+        .docs-section h2 {
+            color: #1e293b;
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+        
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        
+        .doc-link {
+            display: block;
+            padding: 12px 16px;
+            background: white;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        
+        .doc-link:hover {
+            background: #6366f1;
+            color: white;
+            transform: translateX(4px);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Audit Trail Client Libraries</h1>
+        <p class="subtitle">Library siap pakai untuk integrasi dengan Audit Trail API</p>
+        
+        <div class="library-grid">
+            <!-- PHP -->
+            <div class="library-card">
+                <div class="library-icon">PHP</div>
+                <h3>PHP Library</h3>
+                <p>Untuk CodeIgniter, Laravel, atau Native PHP</p>
+                <ul class="file-list">
+                    <li>📄 AuditTrailClient.php</li>
+                    <li>📄 example.php</li>
+                </ul>
+                <a href="../audit/download_client_library/php" class="btn">Download PHP Library</a>
+            </div>
+            
+            <!-- JavaScript -->
+            <div class="library-card">
+                <div class="library-icon">JS</div>
+                <h3>JavaScript Library</h3>
+                <p>Untuk Node.js, React, Vue, Angular, Browser</p>
+                <ul class="file-list">
+                    <li>📄 AuditTrailClient.js</li>
+                    <li>📄 example.js</li>
+                </ul>
+                <a href="../audit/download_client_library/javascript" class="btn">Download JS Library</a>
+            </div>
+            
+            <!-- Python -->
+            <div class="library-card">
+                <div class="library-icon">PY</div>
+                <h3>Python Library</h3>
+                <p>Untuk Django, Flask, FastAPI</p>
+                <ul class="file-list">
+                    <li>📄 audit_trail_client.py</li>
+                    <li>📄 example.py</li>
+                </ul>
+                <a href="../audit/download_client_library/python" class="btn">Download Python Library</a>
+            </div>
+        </div>
+        
+        <div class="docs-section">
+            <h2>📖 Dokumentasi</h2>
+            <div class="docs-grid">
+                <a href="README.md" class="doc-link" download>📚 Library Documentation</a>
+                <a href="../API_QUICKSTART.md" class="doc-link" download>🚀 Quick Start Guide</a>
+                <a href="../API_INTEGRATION_GUIDE.md" class="doc-link" download>📖 Integration Guide</a>
+                <a href="../INTEGRATION_SUMMARY.md" class="doc-link" download>🎯 Integration Summary</a>
+            </div>
+        </div>
+        
+        <a href="../audit/apps" class="back-link">← Kembali ke Dashboard</a>
+    </div>
+</body>
+</html>
